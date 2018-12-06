@@ -6,7 +6,7 @@
 
 要求返回最近的时间，可以重复使用数字，比如'19:35' 返回'19:33'.
 
-hint: [681 - next closest time][[https://www.baidu.com/]
+hint: [681 - next closest time][https://www.baidu.com/]
 </br>
 
 ## Solution
