@@ -1,2 +1,0 @@
-# Algorithm
-Coding Questions
