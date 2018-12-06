@@ -10,9 +10,9 @@ hint: [681 - next closest time][[https://www.baidu.com/]
 
 
 
-##Solution
+## Solution
 
-###Iterative
+### Iterative
 
 ```java
 public String nextClosestTime(String time) {
