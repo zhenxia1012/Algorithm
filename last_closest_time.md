@@ -7,12 +7,11 @@
 要求返回最近的时间，可以重复使用数字，比如'19:35' 返回'19:33'.
 
 hint: [681 - next closest time][[https://www.baidu.com/]
+</br>
 
+## Solution
 
-
-##Solution
-
-###Iterative
+#### Iterative
 
 ```java
 public String nextClosestTime(String time) {
@@ -46,7 +45,7 @@ __Time__: O(256);  __Space__: O(4)
 
 ***
 
-### Greedy
+#### Greedy
 
 ``` java
 public String nextClosestTime(String time) {
