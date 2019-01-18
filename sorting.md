@@ -80,3 +80,82 @@ public void quickSort(int[] nums) {
 }
 ```
 
+
+
+### Merge Sort
+
+```java
+private static void mergeSort(int[] a) {
+    Sort(a, 0, a.length - 1);
+}
+
+private static void Sort(int[] a, int left, int right) {
+    if(left>=right) return;
+
+    int mid = (left + right) / 2;
+    Sort(a, left, mid);
+    Sort(a, mid + 1, right);
+    merge(a, left, mid, right);
+
+}
+
+
+private static void merge(int[] a, int left, int mid, int right) {
+    int[] tmp = new int[a.length];
+    int r1 = mid + 1;
+    int tIndex = left;
+    int cIndex=left;
+
+    while(left <=mid && r1 <= right) {
+        if (a[left] <= a[r1]) 
+            tmp[tIndex++] = a[left++];
+        else
+            tmp[tIndex++] = a[r1++];
+    }
+
+    while (left <= mid) tmp[tIndex++] = a[left++];
+    while (r1 <= right) tmp[tIndex++] = a[r1++];
+
+    while(cIndex<=right){
+        a[cIndex]=tmp[cIndex];
+        cIndex++;
+    }
+}
+```
+
+
+
+### Heap Sort
+
+```java
+void heapSort(int[] arr) {
+    int len = arr.length;
+    buildMaxHeap(arr, len-1);
+    
+    for(int i = len-1; i > 0; i--) {
+        swap(arr, i, 0);
+        maxHeapify(arr, 0, i-1);
+    }
+}
+
+void buildMaxHeap(int[] arr, int heapsize) {
+    for(int i = (heapsize-1) / 2; i >= 0; i--)
+        maxHeapify(arr,i,heapsize);
+}
+
+void maxHeapify(int[] arr, int i, int heapsize) {
+    int left = 2 * i + 1, right = 2 * i + 2;
+    int largest = i;
+    
+    if (left <= heapsize && arr[left] > arr[i])
+        largest=left;
+    if (right <= heapsize && arr[right] > arr[largest])
+        largest=right;
+    
+    if(largest != i) {
+        swap(arr, i, largest);
+        maxHeapify(arr, largest, heapsize);
+    }
+}
+```
+
