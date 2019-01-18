@@ -138,11 +138,26 @@ void heapSort(int[] arr) {
     }
 }
 
+/** @bottom up */
 void buildMaxHeap(int[] arr, int heapsize) {
     for(int i = (heapsize-1) / 2; i >= 0; i--)
         maxHeapify(arr,i,heapsize);
 }
 
+/** @top down */
+// public void buildHeap(int[] nums) {
+//     for(int i = 0; i < nums.length; i++){
+//         int child = i;
+//         int parent = (child - 1) / 2;
+//         while(parent >= 0 && nums[parent] < nums[child]){
+//             swap(nums, parent, child);
+//             child = parent;           
+//             parent = (child - 1) / 2;
+//         }
+//     }
+// }
+
+/** @recursion */
 void maxHeapify(int[] arr, int i, int heapsize) {
     int left = 2 * i + 1, right = 2 * i + 2;
     int largest = i;
@@ -157,5 +172,25 @@ void maxHeapify(int[] arr, int i, int heapsize) {
         maxHeapify(arr, largest, heapsize);
     }
 }
+
+/** @iterative */
+// void maxHeapify(int[] arr, int i, int heapsize) {
+//     int left = 2 * i + 1, right = 2 * i + 2;
+//     int largest = i;
+    
+//     while (i < heapsize) {
+//       if (left <= heapsize && arr[left] > arr[i])
+// 	        largest=left;
+// 	    if (right <= heapsize && arr[right] > arr[largest])
+// 	        largest=right;
+	    
+// 	    if(largest != i) {
+// 	        swap(arr, i, largest);
+// 	        i = largest;
+// 	        left = 2 * i + 1;
+// 	        right = 2 * i + 2;
+// 	    } else break;
+//     }
+// }
 ```
 
