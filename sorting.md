@@ -2,7 +2,7 @@
 
 
 
-###Bubble Sort
+### Bubble Sort
 
 ```java
 public void bubbleSort(int[] nums) {
