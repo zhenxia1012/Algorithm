@@ -4,7 +4,7 @@
 
 
 
-###Normal Version
+### Normal Version
 
 e.g. minimum value in [i, j]
 
@@ -67,7 +67,7 @@ class Node {
 ```
 
 
-###Optimization1 - Lazy Tag
+### Optimization1 - Lazy Tag
 
 e.g. minimum value in [i, j]
 
@@ -144,7 +144,7 @@ class Node {
 ```
 
 
-###Optimization2 - Lazy Initilization
+### Optimization2 - Lazy Initilization
 
 e.g. count of values in [i, j]
 
