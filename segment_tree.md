@@ -65,7 +65,8 @@ class Node {
     }
 }
 ```
-</br>
+
+***
 
 ### Optimization1 - Lazy Tag
 
@@ -142,7 +143,8 @@ class Node {
     }
 }
 ```
-</br>
+
+***
 
 ### Optimization2 - Lazy Initilization
 
