@@ -1,6 +1,7 @@
 # Segment Tree
 
 [Introduction][https://blog.csdn.net/coolkid_cwm/article/details/52137427]
+
 </br>
 
 ### Normal Version
