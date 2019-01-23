@@ -1,7 +1,7 @@
 # Segment Tree
 
 [Introduction][https://blog.csdn.net/coolkid_cwm/article/details/52137427]
-<b>
+</br>
 
 ### Normal Version
 
@@ -64,7 +64,7 @@ class Node {
     }
 }
 ```
-<b>
+</br>
 
 ### Optimization1 - Lazy Tag
 
@@ -141,7 +141,7 @@ class Node {
     }
 }
 ```
-<b>
+</br>
 
 ### Optimization2 - Lazy Initilization
 
