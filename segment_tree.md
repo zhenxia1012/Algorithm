@@ -165,8 +165,8 @@ public void insert(Node root, int val) {
     if (val < root.lv || val > root.rv) return;
     if (root.lv == p && p == root.rv) root.cnt++;
     else {
-        insert(root.getRight(), val);
-        insert(root.getLeft(), val);
+        if (val > root.getMid()) insert(root.getRight(), val);
+        else insert(root.getLeft(), val);
         root.cnt = root.getLeft().cnt + root.getRight().cnt;
     }
 }
