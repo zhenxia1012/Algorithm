@@ -15,7 +15,7 @@ public void bubbleSort(int[] nums) {
 }
 ```
 
-
+***
 
 ### Selection Sort
 
@@ -32,7 +32,7 @@ public void selectSort(int[] nums) {
 }
 ```
 
-
+***
 
 ### Insertion Sort
 
@@ -48,7 +48,7 @@ public void insertSort(int[] nums) {
 }
 ```
 
-
+***
 
 ### Quick Sort
 
@@ -80,7 +80,7 @@ public void quickSort(int[] nums) {
 }
 ```
 
-
+***
 
 ### Merge Sort
 
@@ -123,7 +123,7 @@ private static void merge(int[] a, int left, int mid, int right) {
 }
 ```
 
-
+***
 
 ### Heap Sort
 
