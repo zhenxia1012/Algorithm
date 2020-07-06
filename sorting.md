@@ -41,7 +41,7 @@ public void insertSort(int[] nums) {
 	for (int i = 1; i < nums.length; i++) {
 		int j = i - 1;
 		for (; j >= 0 && nums[j] > nums[i]; j--) {
-			swap(nums, j, j +1 );
+			nums[j + 1] = nums[j];
 		}
 		nums[j + 1] = nums[i];
 	}
