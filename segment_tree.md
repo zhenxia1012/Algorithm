@@ -160,7 +160,8 @@ public int query(Node root, int val) {
 }
 
 public void insert(Node root, int val) {
-    if (val < root.lv || val > root.rv) return;
+    // because of the if-else condition, the value must will correspond to a leaf node, thus below line is not necessary.
+    // if (val < root.lv || val > root.rv) return;
     if (root.lv == p && p == root.rv) root.cnt++;
     else {
         if (val > root.getMid()) insert(root.getRight(), val);
